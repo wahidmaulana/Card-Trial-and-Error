@@ -1,0 +1,80 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Silkscreen", cursive;
+}
+
+:root {
+  --main-bg-clr: #faff70;
+  --primary-clr: #a379c9;
+  --font-clr: #f0f8ff;
+  --icons-clr: #00798c;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-bg-clr);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin: 8px;
+  padding: 32px;
+  background-color: var(--primary-clr);
+  color: var(--font-clr);
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.icons {
+  font-size: 35px;
+  color: var(--icons-clr);
+  margin: 15px 0;
+}
+
+.description {
+  font-size: 0.75em;
+  width: 170px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 5px;
+  font-weight: 700;
+  background-color: lightgreen;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.btn:hover {
+  background-color: tomato;
+  color: var(--font-clr);
+  transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+}
