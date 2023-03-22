@@ -15,13 +15,15 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background-color: var(--main-bg-clr);
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
 }
@@ -57,10 +59,10 @@ body {
 .btn {
   width: 100%;
   margin-top: 15px;
-  cursor: pointer;
-  border: 2px solid black;
   padding: 5px;
+  cursor: pointer;
   font-weight: 700;
+  border: 2px solid black;
   background-color: lightgreen;
   transition: transform 0.2s;
   -webkit-transition: transform 0.2s;
@@ -77,4 +79,43 @@ body {
   -moz-transform: skewY(5deg);
   -ms-transform: skewY(5deg);
   -o-transform: skewY(5deg);
+}
+
+@media screen and (max-width: 476px) {
+  .card {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+
+  .icons {
+    margin: 20px 0;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .btn {
+    margin-top: 35px;
+    padding: 15px 0;
+    font-size: 1.3em;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+  }
+
+  .btn:hover {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
 }
